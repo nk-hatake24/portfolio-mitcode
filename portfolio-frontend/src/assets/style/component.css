@@ -1,0 +1,104 @@
+
+/*-----------------navBar----------------*/
+#menu{
+    width: 100vw;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    /* height: 80px; */
+    transition: 0.5s;
+    position: relative;
+    top: 0px;
+
+
+}
+
+
+.header-container{
+    height: 80px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    flex-wrap: wrap;
+
+}
+
+.nav{
+    width:90vw;
+    height: 50px;
+    display: flex;
+    padding: 1em;
+    border-radius: 50px;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.nav .notScrolling{    
+    background-color: none;
+}
+.nav .scrolling{
+    border: 0.25px solid rgba(0,0,0,0.5);
+
+}
+.theWhite{
+    color:#fff;
+    font-weight:bolder;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.lighter,
+.btn-contact>p{
+    color: #fff;
+    font-weight: normal;
+    cursor: pointer;
+    transition: ease 0.5s;
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+
+.btn-contact>p::after{
+    /* padding-top: 30px;  */
+    transition: ease 0.5s;
+    /* border: 1px solid red; */
+    content: "";
+    height: 1px;
+    width: 0px;
+}
+
+.btn-contact>p:hover::after {
+    display: block;
+    transition: ease 0.5s;
+    width: 100%;
+    transform: scale(1);
+    background: radial-gradient(#fff 20%, #dadada36);
+    
+
+}
+
+
+
+#visible{
+    visibility: inherit;
+    height: 100vh;
+    width: 90vw;
+
+}
+
+#invisible{
+    visibility: hidden;
+    height: 0vh;
+}
+
+
+@media (max-width: 720px) {
+    .theWhite, .btn-contact>p{
+        font-size: 11px;
+    }
+    
+}

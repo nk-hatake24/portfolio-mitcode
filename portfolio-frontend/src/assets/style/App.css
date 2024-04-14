@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Dosis';
+  src: url('../fonts/Dosis-Regular.ttf')format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regularr.ttf')format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  box-sizing:border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', 'Dosis', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  /* color: #999; */
+  color: white;
+} 
