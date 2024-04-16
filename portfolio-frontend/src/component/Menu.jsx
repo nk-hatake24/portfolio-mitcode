@@ -42,7 +42,6 @@ function Menu() {
     border: scrolling=== true? '1px solid rgba(0,0,0,0.5) ': 'none', 
     backgroundColor: scrolling === true? 'rgba(0,0,0,0.5)' : 'inherit'
 
-
   };
 
   return (
@@ -77,6 +76,7 @@ function Menu() {
 
       <div className="container-nav-menu" id={menuVisibity}>
         <div className="nav-menu">
+
           <ul className="ul_navBar" id="ul_navBar">
             <NavLink to="/#home" className="a">
               <li className="a5a li_navBar" id="li_navBar">

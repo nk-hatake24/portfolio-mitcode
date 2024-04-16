@@ -24,6 +24,7 @@
     background-image: radial-gradient(#00aaffd8,#00aaffb8, #00aafff3), url(../background_paysage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    filter:brightness(50px);
 
 }
 .home_container{
