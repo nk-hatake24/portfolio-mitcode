@@ -1,8 +1,12 @@
-import React from 'react'
-import '../assets/style/footer.css'
+import React from "react";
+import "../assets/style/footer.css";
 
-import { FaFacebook, FaTwitter, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-
+import {
+  FaGithub,
+  FaTwitter,
+  FaLinkedinIn,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -14,15 +18,20 @@ const Footer = () => {
         <div>CONTACT</div>
       </div>
       <div id="social-media-footer">
-        <FaFacebook className='social-media-footer-facebook'/>
-        <FaTwitter className="social-media-footer-twitter"/>
-        <FaLinkedinIn className="social-media-footer-lindkedIn"/>
-        <FaWhatsapp className="social-media-footer-whatsapp"/>
+        <div className="social-media-container pointer">
+        <a href="https://github.com/nk-hatake24"> <FaGithub className="social-media-footer-facebook" /></a> 
+        </div>
+        
+        <div className="social-media-container pointer"><FaTwitter className="social-media-footer-twitter" /></div>
+        <div className="social-media-container pointer"><FaLinkedinIn className="social-media-footer-lindkedIn" /></div>
+        <div className="social-media-container pointer"><FaWhatsapp className="social-media-footer-whatsapp" /></div>
+        
+        
       </div>
 
-      <div id='copyright'>&copy; 2024 MITCODE</div>
+      <div id="copyright">&copy; 2024 MITCODE</div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

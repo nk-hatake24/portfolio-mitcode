@@ -1,24 +1,47 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import emailjs from '@emailjs/browser';
 import { FaEnvelope } from "react-icons/fa";
 
 
 const Contact = () => {
+
+  const form = useRef() 
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_2za17eq', 'template_effscvx', form.current, {
+        publicKey: 'DWvUQQhK3daJW8_qZ',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <section id="contact">
+        
         <div className="contact-text">
           <div>
             <h2>Got a problem to solve</h2>
           </div>
         </div>
+       
         <div className="contact-form">
+          <form ref = {form} onSubmit={sendEmail}>
           <div className="contact-form-index">
             <label htmlFor="name">Name</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" name="from_name"/>
           </div>
 
           <div className="contact-form-index">
             <label htmlFor="email">Email</label>
-            <input type="text" id="email" />
+            <input type="text" id="email" name="user_email" />
           </div>
 
           <div className="contact-form-index">
@@ -31,8 +54,9 @@ const Contact = () => {
               <FaEnvelope />
               <a href="mailto:nkenlamichel@gmail.com">nkenlamichel@gmail.com</a>
             </p>
-            <button className="contact-form-btn">contact me!</button>
+            <button type='submit' className="contact-form-btn">contact me!</button>
           </div>
+          </form>
         </div>
       </section>
   )

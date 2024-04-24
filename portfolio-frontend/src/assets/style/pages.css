@@ -150,17 +150,17 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.contact-form{
+.contact-form>form{
     display: flex;
     flex-direction: column;
     gap: 1rem;
     width: 45vw;
     background-color: #434750;
 }
-.contact-form>div>label{
+.contact-form-index>label{
     color: #dadada;
 }
-.contact-form>div>p, .contact-form>div{
+.contact-form-index>p, .contact-form-index{
     display: flex;
     gap: 0.5rem;
 }
@@ -181,7 +181,7 @@
 }
 
 .contact-form-index>input{
-    height: 3em;
+    /* height: 3em; */
     padding: 1em;
     background-color: #3b404b;
     border: 1px solid #999;

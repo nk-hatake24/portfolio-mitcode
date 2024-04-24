@@ -38,7 +38,15 @@
     
 } */
 
+.social-media-container{
+    padding: 1em;
+    border: 2px solid #ffffff1d;
+    border-radius: 50%;
+}
 
+.social-media-container:hover{
+    border-color: #fff;
+}
 #copyright{
     justify-content: center;
     display: flex;
