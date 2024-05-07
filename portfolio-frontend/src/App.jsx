@@ -6,13 +6,19 @@ import NoPages from "./pages/NoPages";
 
 
 import './assets/style/app.css'
+import About from "./pages/About";
 
 const router = createBrowserRouter([
+  
   {
     path: '/',
     element: <Layout/>,
   }, 
  
+  {
+    path: '/about',
+    element: <About/>,
+  }, 
   {
     path: '*',
     element: <NoPages/>

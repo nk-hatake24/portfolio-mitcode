@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate,Link } from "react-router-dom";
 
 import Hamburger from "hamburger-react";
 import "../assets/style/component.css";
@@ -78,17 +78,17 @@ function Menu() {
         <div className="nav-menu">
 
           <ul className="ul_navBar" id="ul_navBar">
-            <NavLink to="/#home" className="a">
+            <NavLink to={"/#home"} className="a">
               <li className="a5a li_navBar" id="li_navBar">
                 home
               </li>
             </NavLink>
 
-            <NavLink to="/#about" className="a">
+            <Link to={"/#about"} className="a">
               <li className="a4a li_navBar" id="li_navBar">
                 about
               </li>
-            </NavLink>
+            </Link>
 
             <NavLink to="/#service" className="a">
               <li className="a3a li_navBar" id="li_navBar">
